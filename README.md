@@ -1,4 +1,4 @@
-﻿# Wibbow International Cooperation
+# Wibbow International Cooperation
 
 ## Description
 
