@@ -1,142 +1,46 @@
-# Wibbow International Cooperation
+﻿# Wibbow International Cooperation
 
-Premium dark-tech company website for **Wibbow International Cooperation**, a B2B technology partner offering Agentic AI, AI automation, networking and cloud services, system engineering, and cybersecurity solutions.
+## Description
 
-The project is built as a polished single-page React experience with responsive layouts, motion-enhanced sections, client-side contact validation, and a no-install static server fallback for environments where npm is not available.
+A premium single-page React website for a B2B technology partner offering Agentic AI, automation, networking, cloud, system engineering, and cybersecurity services.
 
-![Wibbow desktop hero](screenshots/desktop-hero.png)
+## Key Features
 
-## Project Highlights
-
-- Modern premium UI for an AI, cloud, systems, and cybersecurity company.
-- Fully responsive desktop and mobile experience.
-- Animated hero section with abstract secure AI infrastructure visuals.
-- Service pillars for Agentic AI, AI Automations, Networking and Cloud, System Engineering, and CyberSecurity.
-- Process and trust sections designed for B2B credibility.
-- Client-side contact form validation with required-field, email, and success states.
-- Reusable content model in `src/data/siteContent.js`.
-- Smoke test and screenshot capture scripts included.
-
-## Screenshots
-
-### Desktop Contact Section
-
-![Wibbow desktop contact section](screenshots/desktop-contact.png)
-
-### Mobile Homepage
-
-![Wibbow mobile homepage](screenshots/mobile-home.png)
+- Responsive React/Vite single-page website
+- Service, process, trust, hero, and contact sections
+- Reusable content model in src/data/siteContent.js
+- Local contact-form validation with static success feedback
+- Smoke-test and screenshot capture scripts
 
 ## Tech Stack
 
 - React
+- Vite
 - JavaScript
 - CSS
-- Lucide icons
-- Static Node.js server fallback
-- Playwright-based smoke testing and screenshot capture
+- Lucide React
+- Node.js
 
-## Project Structure
+## Installation
 
-```text
-.
-├── index.html
-├── package.json
-├── public/
-│   └── favicon.svg
-├── screenshots/
-│   ├── desktop-contact.png
-│   ├── desktop-hero.png
-│   └── mobile-home.png
-├── scripts/
-│   ├── capture-screenshots.cjs
-│   └── smoke-test.cjs
-├── server.cjs
-└── src/
-    ├── App.jsx
-    ├── components/
-    ├── data/
-    │   └── siteContent.js
-    ├── lib/
-    │   └── h.js
-    ├── main.jsx
-    └── styles.css
-```
-
-## Run Locally
-
-If Node and npm are installed:
-
-```bash
 npm install
-npm run dev
-```
 
-If npm is not available but Node is available:
+## Usage
 
-```bash
-node server.cjs
-```
+Run `npm run dev` for development, `npm run build` for production builds, or `npm run serve` for the static Node.js fallback.
 
-Then open:
+## Screenshots
 
-```text
-http://127.0.0.1:4173
-```
+![Desktop hero](screenshots/desktop-hero.png)
 
-## Available Scripts
+![Desktop contact section](screenshots/desktop-contact.png)
 
-```bash
-npm run dev
-```
+![Mobile homepage](screenshots/mobile-home.png)
 
-Start the Vite development server.
+Additional screenshots can be placed in the `screenshots/` folder.
 
-```bash
-npm run build
-```
+## License
 
-Create a production build with Vite.
+No license file is currently included. Add a license before reusing, distributing, or publishing this project for public collaboration.
 
-```bash
-npm run serve
-```
 
-Run the dependency-light static server fallback.
-
-```bash
-npm run smoke
-```
-
-Run the Playwright smoke test for desktop layout, mobile navigation, anchor scrolling, and contact validation.
-
-```bash
-npm run screenshots
-```
-
-Capture fresh desktop and mobile screenshots into the `screenshots/` folder.
-
-## QA Coverage
-
-The included smoke test verifies:
-
-- Page title and hero heading.
-- Five service cards.
-- Five process steps.
-- Four trust stats.
-- Required contact-form validation.
-- Invalid email validation.
-- Static success confirmation.
-- Anchor navigation.
-- Mobile menu open and close behavior.
-- Mobile horizontal overflow.
-
-Latest local QA result:
-
-```text
-Smoke test passed: desktop, mobile nav, anchors, and contact validation.
-```
-
-## Notes
-
-This is a static v1 marketing site. The contact form validates locally and displays a confirmation message, but it does not send data to a backend service yet.
